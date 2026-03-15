@@ -44,7 +44,7 @@
     <!-- Header -->
     <header
         class="w-full py-4 px-6 md:px-12 flex justify-between items-center bg-[#FAF0DB]/95 backdrop-blur-sm relative z-50">
-        <div class="tracking-wide ml-4 md:ml-24 lg:ml-40 relative">
+        <div class="tracking-wide ml-0 md:ml-24 lg:ml-40 relative">
             <a href="#" class="block w-40 md:w-64 h-12 md:h-16">
                 <!-- Logo sobreposto em position absolute para crescer sem engrossar o header -->
                 <img src="assets/logo.png?v=2" alt="Elisa Campestrini"
@@ -60,10 +60,25 @@
                 Agendar uma sessão
             </a>
         </nav>
-        <button class="md:hidden text-wine">
+        <button id="menu-btn" class="md:hidden text-wine">
             <i data-lucide="menu" class="w-8 h-8"></i>
         </button>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-wine z-[100] hidden flex flex-col items-center justify-center text-center space-y-10 px-6">
+        <button id="close-menu" class="absolute top-8 right-8 text-[#FAF0DB]">
+            <i data-lucide="x" class="w-10 h-10"></i>
+        </button>
+        <a href="#sobre" class="text-3xl font-serif italic text-sand uppercase">Sobre</a>
+        <a href="#servicos" class="text-3xl font-serif italic text-sand uppercase">Serviços</a>
+        <a href="#abordagem" class="text-3xl font-serif italic text-sand uppercase">Abordagem</a>
+        <a href="#faq" class="text-3xl font-serif italic text-sand uppercase">FAQ</a>
+        <a href="#contato" class="bg-sand text-wine px-10 py-4 rounded-full text-xl font-bold uppercase">
+            Agendar uma sessão
+        </a>
+    </div>
 
     <!-- Main Content -->
     <main>
@@ -262,43 +277,78 @@
                 <div class="space-y-0">
                     <!-- FAQ Items -->
                     <div
-                        class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6 faq-item">
                         <div class="flex justify-between items-center text-xl font-normal text-[#FAF0DB]/90">
                             <span>Eu nunca fiz terapia antes. O que posso esperar?</span>
                             <i data-lucide="plus"
-                                class="w-6 h-6 text-[#FAF0DB]/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                                class="w-6 h-6 text-[#FAF0DB]/80 transition-transform duration-300 faq-icon"></i>
+                        </div>
+                        <div class="max-h-0 overflow-hidden transition-all duration-500 faq-answer">
+                            <p class="pt-6 text-cream/70 leading-relaxed text-base">
+                                A primeira sessão é um momento de conhecimento mútuo. Você terá liberdade para contar o
+                                que te trouxe à terapia e para tirar dúvidas sobre como trabalho. É um espaço seguro,
+                                livre de julgamentos, focado na sua experiência.
+                            </p>
                         </div>
                     </div>
                     <div
-                        class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6 faq-item">
                         <div class="flex justify-between items-center text-xl font-normal text-[#FAF0DB]/90">
                             <span>Como sei se somos uma boa combinação para trabalharmos juntas?</span>
                             <i data-lucide="plus"
-                                class="w-6 h-6 text-[#FAF0DB]/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                                class="w-6 h-6 text-[#FAF0DB]/80 transition-transform duration-300 faq-icon"></i>
+                        </div>
+                        <div class="max-h-0 overflow-hidden transition-all duration-500 faq-answer">
+                            <p class="pt-6 text-cream/70 leading-relaxed text-base">
+                                A conexão entre terapeuta e cliente é fundamental. Nas primeiras sessões, você poderá
+                                sentir se a forma como eu escuto e pontuo as questões faz sentido para você. A terapia é
+                                um processo colaborativo de confiança.
+                            </p>
                         </div>
                     </div>
                     <div
-                        class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6 faq-item">
                         <div class="flex justify-between items-center text-xl font-normal text-[#FAF0DB]/90">
                             <span>De quantas sessões eu vou precisar?</span>
                             <i data-lucide="plus"
-                                class="w-6 h-6 text-[#FAF0DB]/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                                class="w-6 h-6 text-[#FAF0DB]/80 transition-transform duration-300 faq-icon"></i>
+                        </div>
+                        <div class="max-h-0 overflow-hidden transition-all duration-500 faq-answer">
+                            <p class="pt-6 text-cream/70 leading-relaxed text-base">
+                                O tempo de terapia é muito singular. Algumas demandas podem ser trabalhadas em períodos
+                                mais curtos, enquanto outros processos de autoconhecimento profundo podem levar mais
+                                tempo. Vamos avaliar isso juntas continuamente.
+                            </p>
                         </div>
                     </div>
                     <div
-                        class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6 faq-item">
                         <div class="flex justify-between items-center text-xl font-normal text-[#FAF0DB]/90">
                             <span>Com que frequência precisaremos nos encontrar?</span>
                             <i data-lucide="plus"
-                                class="w-6 h-6 text-[#FAF0DB]/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                                class="w-6 h-6 text-[#FAF0DB]/80 transition-transform duration-300 faq-icon"></i>
+                        </div>
+                        <div class="max-h-0 overflow-hidden transition-all duration-500 faq-answer">
+                            <p class="pt-6 text-cream/70 leading-relaxed text-base">
+                                Geralmente, iniciamos com sessões semanais para estabelecer um bom ritmo de trabalho e
+                                vínculo. Conforme o processo avança, podemos reavaliar essa frequência de acordo com a
+                                sua necessidade e bem-estar.
+                            </p>
                         </div>
                     </div>
                     <div
-                        class="border-t border-b border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        class="border-t border-b border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6 faq-item">
                         <div class="flex justify-between items-center text-xl font-normal text-[#FAF0DB]/90">
                             <span>O que acontece se eu precisar cancelar ou faltar a uma sessão?</span>
                             <i data-lucide="plus"
-                                class="w-6 h-6 text-[#FAF0DB]/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                                class="w-6 h-6 text-[#FAF0DB]/80 transition-transform duration-300 faq-icon"></i>
+                        </div>
+                        <div class="max-h-0 overflow-hidden transition-all duration-500 faq-answer">
+                            <p class="pt-6 text-cream/70 leading-relaxed text-base">
+                                Trabalhamos com uma política de cancelamento acordada na primeira sessão. Geralmente,
+                                pedimos um aviso prévio para que possamos reorganizar a agenda e, se possível, repor o
+                                horário dentro da mesma semana.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -405,6 +455,54 @@
 
     <script>
         lucide.createIcons();
+
+        // Mobile Menu Interactivity
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close menu on link click
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon');
+
+                // Toggle this item
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    // Close others (optional, but cleaner)
+                    faqItems.forEach(other => {
+                        other.querySelector('.faq-answer').style.maxHeight = null;
+                        other.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+                    });
+
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                    icon.style.transform = 'rotate(45deg)';
+                }
+            });
+        });
     </script>
 </body>
 
