@@ -1,0 +1,24 @@
+/* Custom Styles for Elisa Campestrini Website */
+body {
+    scroll-behavior: smooth;
+    /* Ensure no text selection styling interferes too harshly */
+    ::selection {
+        background-color: #EDC5B9;
+        color: #45171B;
+    }
+}
+
+.arch-frame {
+    /* Using percentage border-radius to create the arch window look: Top-left, Top-right, Bottom-right, Bottom-left */
+    /* Often a fixed pixel radius looks more uniform, but percentage is responsive. */
+    /* A standard arch is perfectly half-circle at top. 50% horizontally, but vertically it can stretch. */
+    /* We'll use viewport relative or large fixed numbers to avoid stretch distortion. */
+    border-radius: 999px 999px 0 0;
+}
+
+/* In case we need more specific arch formatting */
+@media (min-width: 768px) {
+    .arch-frame {
+        border-radius: 600px 600px 0 0;
+    }
+}

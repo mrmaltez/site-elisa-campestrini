@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisa Campestrini - Psicóloga Humanista</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wine: '#45171B',
+                        cream: '#FFF7EC',
+                        peach: '#EDC5B9',
+                        sand: '#FFF1B5',
+                        earth: '#58382B'
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cream text-earth font-sans antialiased text-lg font-light">
+    <!-- Header -->
+    <header class="w-full py-8 px-6 md:px-12 flex justify-between items-center bg-cream/95 backdrop-blur-sm sticky top-0 z-50">
+        <div class="text-3xl font-serif text-wine tracking-wide">
+            Elisa Campestrini
+        </div>
+        <nav class="hidden md:flex gap-10 text-earth text-sm font-semibold tracking-widest items-center">
+            <a href="#sobre" class="hover:text-wine transition-colors uppercase">Sobre</a>
+            <a href="#servicos" class="hover:text-wine transition-colors uppercase">Serviços</a>
+            <a href="#abordagem" class="hover:text-wine transition-colors uppercase">Abordagem</a>
+            <a href="#faq" class="hover:text-wine transition-colors uppercase">FAQ</a>
+            <a href="#contato" class="bg-wine text-cream px-6 py-3 rounded-full hover:bg-earth transition-colors uppercase leading-none pb-3.5">
+                Marcar uma sessão
+            </a>
+        </nav>
+        <button class="md:hidden text-wine">
+            <i data-lucide="menu" class="w-8 h-8"></i>
+        </button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-[50vh] flex flex-col items-center justify-center text-center px-6 border-b-[6px] border-peach/50 mt-12 mb-20">
+            <h1 class="font-serif italic text-4xl md:text-[3.5rem] text-earth md:leading-[1.4] max-w-4xl pb-16">
+                Você é bem-vinda aqui exatamente como você é.
+            </h1>
+        </section>
+
+        <!-- Intro / About Section -->
+        <section id="sobre" class="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div class="relative flex justify-center">
+                <img src="assets/images/placeholder-1.svg" alt="Elisa Campestrini" class="w-full max-w-[500px] h-[650px] object-cover arch-frame shadow-md">
+            </div>
+            <div class="space-y-8 max-w-lg">
+                <h2 class="font-serif italic text-5xl text-earth mb-8">Um espaço de escuta e acolhimento</h2>
+                <div class="space-y-6 text-earth leading-relaxed font-light">
+                    <p>
+                        Muitas pessoas chegam até aqui enfrentando momentos de transição, instabilidades, sobrecarga emocional ou a sensação de estarem desconectadas de si mesmas. 
+                    </p>
+                    <p>
+                        Estou aqui para ajudar você a reconstruir a confiança em si mesma e a nutrir relações mais saudáveis, num ambiente onde você pode explorar suas emoções sem julgamentos. As dores mais profundas encontram cura quando podemos compartilhá-las da forma mais autêntica possível.
+                    </p>
+                    <p>
+                        Juntas, vamos abrir espaço para o que está emergindo na sua vida agora e transformar a forma como você enxerga sua própria história.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicos" class="py-32 max-w-7xl mx-auto px-6 mt-16">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+                <h2 class="font-serif italic text-5xl text-earth md:w-1/3">Meus Serviços</h2>
+                <div class="md:w-2/3">
+                    <p class="text-[1.35rem] leading-relaxed text-earth font-light max-w-3xl">
+                        Ofereço um espaço cálido e empático para navegar por transições de vida, esgotamento emocional e desafios nos relacionamentos. Juntas, trabalharemos para reconectar você com as suas motivações e afetos mais essenciais.
+                    </p>
+                </div>
+            </div>
+            
+            <hr class="border-t border-earth/20 mb-20 w-full">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 text-center md:text-left">
+                <!-- Service 1 -->
+                <div class="space-y-8 flex flex-col items-center md:items-start group px-4">
+                    <div class="w-32 h-32 bg-peach rounded-full transition-transform duration-500 group-hover:scale-105"></div>
+                    <div class="space-y-4">
+                        <h3 class="font-serif italic text-[2rem] text-wine leading-tight">Apoio para<br>Transições de Vida</h3>
+                        <div class="w-16 h-px bg-earth/40"></div>
+                        <p class="text-base font-light text-earth pt-2">
+                            Acompanhamento em momentos de grande mudança de rotina, papéis, luto ou processos de migração, estabelecendo uma âncora emocional.
+                        </p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="space-y-8 flex flex-col items-center md:items-start group px-4">
+                    <div class="w-32 h-32 bg-sand rounded-full transition-transform duration-500 group-hover:scale-105 shadow-sm"></div>
+                    <div class="space-y-4">
+                        <h3 class="font-serif italic text-[2rem] text-wine leading-tight">Relacionamentos<br>Complexos</h3>
+                        <div class="w-16 h-px bg-earth/40"></div>
+                        <p class="text-base font-light text-earth pt-2">
+                            Para quando você sente dificuldade em se posicionar, lida com conflitos ou sente que está sempre sobrepondo as demandas dos outros às suas.
+                        </p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="space-y-8 flex flex-col items-center md:items-start group px-4">
+                    <div class="w-32 h-32 bg-[#cca294] rounded-full transition-transform duration-500 group-hover:scale-105"></div>
+                    <div class="space-y-4">
+                        <h3 class="font-serif italic text-[2rem] text-wine leading-tight">Burnout e<br>Sobrecarga</h3>
+                        <div class="w-16 h-px bg-earth/40"></div>
+                        <p class="text-base font-light text-earth pt-2">
+                            Auxílio na navegação pelo cansaço extremo, perda de sentido ou sobrecarga no trabalho, resgatando a vitalidade no dia a dia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approach Section -->
+        <section id="abordagem" class="py-32 max-w-7xl mx-auto px-6 overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
+                <!-- Left: Images -->
+                <div class="relative min-h-[700px] flex justify-center md:block order-2 md:order-1 mt-16 md:mt-0">
+                     <!-- Image 1 (Back) -->
+                     <img src="assets/images/placeholder-2.svg" alt="Sessão de Terapia" class="w-full max-w-[400px] h-[580px] object-cover arch-frame shadow-md md:absolute left-0 top-0 z-0">
+                     <!-- Image 2 (Front) -->
+                     <img src="assets/images/placeholder-3.svg" alt="Clínica" class="w-5/6 max-w-[360px] h-[480px] object-cover arch-frame shadow-xl absolute -bottom-12 md:-bottom-8 md:right-4 z-10 border-[12px] border-cream">
+                </div>
+                
+                <!-- Right: Content -->
+                <div class="space-y-10 flex flex-col justify-center order-1 md:order-2">
+                    <h2 class="font-serif italic text-5xl text-earth">Minha Abordagem</h2>
+                    <hr class="border-t border-earth/20 w-full mb-8">
+                    
+                    <p class="text-[1.25rem] text-wine font-bold leading-relaxed">
+                        Muitas pessoas com que eu trabalho enfrentam mudanças profundas, momentos de ruptura, desilusão amorosa ou uma sensação constante de que falta algo. Frequentemente, elas se deparam com dúvidas sobre quem são de verdade e o que desejam para o futuro.
+                    </p>
+                    
+                    <div class="space-y-6 font-light text-earth leading-[1.8]">
+                        <p>
+                            Estou aqui para ajudar você a se reconectar consigo mesma e construir ferramentas robustas de autoconfiança e autocuidado. Seja o nosso encontro na modalidade online ou presencial.
+                        </p>
+                        <p>
+                            Juntas, vamos observar pensamentos arraigados e defesas que, embora úteis no ado, hoje já não fazem sentido para quem você deseja ser. Com a expansão da consciência, pavimentamos de forma afetuosa novos caminhos de adaptação e mudança para o seu bem-estar.
+                        </p>
+                        <p>
+                            Minha base é a Psicologia Humanista, honrando a sua experiência, a sua história singular e voltando o nosso olhar para a capacidade de cura e de desenvolvimento que existe organicamente dentro de você.
+                        </p>
+                        <p>
+                            Ser ouvida com verdadeira abertura, em especial nos cantos onde nos sentimos mais vulneráveis, inseguros, confusos ou assustados, é um ato transformador de coragem, liberdade e reparação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs -->
+        <section id="faq" class="bg-wine text-cream py-32 mt-16">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="font-serif text-5xl text-sand text-center mb-10">FAQs</h2>
+                <p class="text-center font-serif text-[1.4rem] max-w-[42rem] mx-auto mb-20 text-cream/90 leading-relaxed">
+                    Às vezes é difícil iniciar um processo tão íntimo quanto a terapia. Aqui você encontra respostas sobre o aconselhamento e como funcionam as sessões comigo.
+                </p>
+                
+                <div class="space-y-0">
+                    <!-- FAQ Items -->
+                    <div class="border-t border-cream/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        <div class="flex justify-between items-center text-xl font-light text-cream/90">
+                            <span>Eu nunca fiz terapia antes. O que posso esperar?</span>
+                            <i data-lucide="plus" class="w-6 h-6 text-cream/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="border-t border-cream/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        <div class="flex justify-between items-center text-xl font-light text-cream/90">
+                            <span>Como sei se somos uma boa combinação para trabalharmos juntas?</span>
+                            <i data-lucide="plus" class="w-6 h-6 text-cream/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="border-t border-cream/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        <div class="flex justify-between items-center text-xl font-light text-cream/90">
+                            <span>De quantas sessões eu vou precisar?</span>
+                            <i data-lucide="plus" class="w-6 h-6 text-cream/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="border-t border-cream/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        <div class="flex justify-between items-center text-xl font-light text-cream/90">
+                            <span>Com que frequência precisaremos nos encontrar?</span>
+                            <i data-lucide="plus" class="w-6 h-6 text-cream/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="border-t border-b border-cream/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        <div class="flex justify-between items-center text-xl font-light text-cream/90">
+                            <span>O que acontece se eu precisar cancelar ou faltar a uma sessão?</span>
+                            <i data-lucide="plus" class="w-6 h-6 text-cream/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato" class="py-32 bg-cream">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="font-serif text-[3.5rem] text-wine text-center mb-24">Contato</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center max-w-5xl mx-auto">
+                    <!-- Left: Profile Image -->
+                    <div class="relative flex justify-center">
+                        <img src="assets/images/placeholder-4.svg" alt="Elisa Campestrini Contato" class="w-full max-w-[420px] h-[550px] object-cover arch-frame shadow-md">
+                    </div>
+                    
+                    <!-- Right: Info Details -->
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left space-y-12">
+                        <div>
+                            <a href="mailto:contato@elisacampestrini.com.br" class="text-3xl font-serif italic text-wine border-b-2 border-wine pb-1 hover:text-earth hover:border-earth transition-colors">
+                                contato@elisacampestrini.com.br
+                            </a>
+                        </div>
+                        
+                        <!-- CTA WhatsApp -->
+                        <div>
+                            <a href="#" class="inline-flex bg-wine text-cream px-12 py-4 rounded-full hover:bg-earth transition-all shadow-sm tracking-[0.2em] text-sm font-semibold uppercase leading-none pb-[1.1rem]">
+                                WhatsApp
+                            </a>
+                        </div>
+                        
+                        <!-- Extra Icons/Info -->
+                        <div class="pt-4 flex flex-col items-center md:items-start space-y-6">
+                            <a href="#" class="text-earth hover:text-wine transition-colors border border-earth/20 p-3 rounded-full hover:bg-peach/10">
+                                <i data-lucide="instagram" class="w-6 h-6"></i>
+                            </a>
+                            
+                            <div class="font-serif italic text-[1.4rem] text-earth max-w-sm leading-[1.6]">
+                                Atendimento online para todo o Brasil. Presencial em São Paulo, SP (Próximo à Av. Paulista).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-wine py-8 px-6 text-center">
+        <p class="text-cream/50 text-sm font-light tracking-wide">&copy; 2024 Elisa Campestrini - Psicóloga Humanista. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
