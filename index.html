@@ -34,10 +34,10 @@
     </script>
 </head>
 
-<body class="bg-cream text-earth font-sans antialiased text-lg font-light">
+<body class="bg-[#FAF0DB] text-earth font-sans antialiased text-lg font-light">
     <!-- Header -->
     <header
-        class="w-full py-8 px-6 md:px-12 flex justify-between items-center bg-cream/95 backdrop-blur-sm sticky top-0 z-50">
+        class="w-full py-8 px-6 md:px-12 flex justify-between items-center bg-[#FAF0DB]/95 backdrop-blur-sm sticky top-0 z-50">
         <div class="tracking-wide">
             <a href="#">
                 <img src="assets/logo.png" alt="Elisa Campestrini" class="h-32 md:h-[12rem] w-auto drop-shadow-sm">
@@ -48,8 +48,7 @@
             <a href="#servicos" class="hover:text-wine transition-colors uppercase">Serviços</a>
             <a href="#abordagem" class="hover:text-wine transition-colors uppercase">Abordagem</a>
             <a href="#faq" class="hover:text-wine transition-colors uppercase">FAQ</a>
-            <a href="#contato"
-                class="bg-wine text-cream px-6 py-3 rounded-full hover:bg-earth transition-colors uppercase leading-none pb-3.5">
+            <a href="#contato" class="bg-wine text-cream px-6 py-3 rounded-full uppercase leading-none pb-3.5">
                 Marcar uma sessão
             </a>
         </nav>
@@ -66,11 +65,14 @@
         <section id="sobre" class="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
             <div class="relative flex justify-center">
                 <img src="assets/imagens-elisa/elisa_1.jpg" alt="Elisa Campestrini"
-                    class="w-full max-w-[500px] h-[650px] object-cover arch-frame shadow-lg">
+                    class="w-full max-w-[500px] h-[650px] object-cover object-[center_20%] scale-110 arch-frame shadow-lg">
             </div>
-            <div class="space-y-8 max-w-lg mt-12 md:mt-0">
-                <h2 class="font-serif italic text-5xl md:text-[3.5rem] md:leading-[1.1] text-wine mb-8">Um espaço de
-                    escuta e acolhimento</h2>
+            <div class="space-y-8 max-w-lg mt-12 md:mt-20 md:ml-12 overflow-visible">
+                <div>
+                    <h2 class="font-serif italic text-5xl md:text-[3.5rem] md:leading-[1.1] text-wine mb-4">Um espaço de
+                        escuta e acolhimento</h2>
+                    <hr class="border-t-[3px] border-earth/20 w-24">
+                </div>
                 <div class="space-y-6 text-earth leading-relaxed font-light">
                     <p>
                         Muitas pessoas chegam até aqui enfrentando momentos de transição, instabilidades, sobrecarga
@@ -87,7 +89,7 @@
                     </p>
                     <div class="pt-6">
                         <a href="#contato"
-                            class="inline-flex items-center gap-3 bg-wine text-cream px-8 py-4 rounded-full hover:bg-earth transition-all shadow-sm tracking-widest text-sm font-semibold uppercase">
+                            class="inline-flex items-center gap-3 bg-wine text-cream px-8 py-4 rounded-full shadow-sm tracking-widest text-sm font-semibold uppercase">
                             Agendar uma sessão
                             <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
@@ -97,87 +99,92 @@
         </section>
 
         <!-- Services Section -->
-        <section id="servicos" class="py-32 max-w-7xl mx-auto px-6 mt-16">
-            <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
-                <h2 class="font-serif italic text-5xl md:text-[3.5rem] text-wine md:w-1/3">Meus Serviços</h2>
-                <div class="md:w-2/3">
-                    <p class="text-[1.35rem] leading-relaxed text-earth font-light max-w-3xl">
-                        Ofereço um espaço cálido e empático para navegar por transições de vida, esgotamento emocional e
-                        desafios nos relacionamentos. Juntas, trabalharemos para reconectar você com as suas motivações
-                        e afetos mais essenciais.
-                    </p>
-                </div>
-            </div>
-
-            <hr class="border-t border-earth/20 mb-20 w-full">
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 text-center md:text-left">
-                <!-- Service 1 -->
-                <div class="space-y-8 flex flex-col items-center md:items-start group px-4">
-                    <div
-                        class="w-32 h-32 bg-peach rounded-full transition-transform duration-500 group-hover:scale-105">
+        <section id="servicos" class="py-32 bg-[#F6DCBA]">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+                    <div class="md:w-1/3">
+                        <h2 class="font-serif italic text-5xl md:text-[3.5rem] text-wine mb-4">Meus Serviços</h2>
+                        <hr class="border-t-[3px] border-earth/20 w-24">
                     </div>
-                    <div class="space-y-4">
-                        <h3 class="font-serif italic text-[2.5rem] text-wine leading-tight">Apoio para<br>Transições de
-                            Vida</h3>
-                        <div class="w-16 h-px bg-earth/40"></div>
-                        <p class="text-base font-light text-earth pt-2">
-                            Acompanhamento em momentos de grande mudança de rotina, papéis, luto ou processos de
-                            migração, estabelecendo uma âncora emocional.
+                    <div class="md:w-2/3">
+                        <p class="text-[1.35rem] leading-relaxed text-earth font-light max-w-3xl">
+                            Ofereço um espaço cálido e empático para navegar por transições de vida, esgotamento
+                            emocional e
+                            desafios nos relacionamentos. Juntas, trabalharemos para reconectar você com as suas
+                            motivações
+                            e afetos mais essenciais.
                         </p>
                     </div>
                 </div>
-                <!-- Service 2 -->
-                <div class="space-y-8 flex flex-col items-center md:items-start group px-4">
-                    <div
-                        class="w-32 h-32 bg-sand rounded-full transition-transform duration-500 group-hover:scale-105 shadow-sm">
+
+                <hr class="border-t border-earth/20 mb-20 w-full">
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 text-center md:text-left">
+                    <!-- Service 1 -->
+                    <div class="space-y-8 flex flex-col items-center md:items-start group px-4">
+                        <div
+                            class="w-32 h-32 bg-[#FFF1B5] rounded-full transition-transform duration-500 group-hover:scale-105 shadow-sm">
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="font-serif italic text-[2.5rem] text-wine leading-tight">Apoio para<br>Transições
+                                de
+                                Vida</h3>
+                            <div class="w-16 h-px bg-earth/40"></div>
+                            <p class="text-base font-light text-earth pt-2">
+                                Acompanhamento em momentos de grande mudança de rotina, papéis, luto ou processos de
+                                migração, estabelecendo uma âncora emocional.
+                            </p>
+                        </div>
                     </div>
-                    <div class="space-y-4">
-                        <h3 class="font-serif italic text-[2.5rem] text-wine leading-tight">Relacionamentos<br>Complexos
-                        </h3>
-                        <div class="w-16 h-px bg-earth/40"></div>
-                        <p class="text-base font-light text-earth pt-2">
-                            Para quando você sente dificuldade em se posicionar, lida com conflitos ou sente que está
-                            sempre sobrepondo as demandas dos outros às suas.
-                        </p>
+                    <!-- Service 2 -->
+                    <div class="space-y-8 flex flex-col items-center md:items-start group px-4">
+                        <div
+                            class="w-32 h-32 bg-[#FFF1B5] rounded-full transition-transform duration-500 group-hover:scale-105 shadow-sm">
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="font-serif italic text-[2.5rem] text-wine leading-tight">
+                                Relacionamentos<br>Complexos
+                            </h3>
+                            <div class="w-16 h-px bg-earth/40"></div>
+                            <p class="text-base font-light text-earth pt-2">
+                                Para quando você sente dificuldade em se posicionar, lida com conflitos ou sente que
+                                está
+                                sempre sobrepondo as demandas dos outros às suas.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="space-y-8 flex flex-col items-center md:items-start group px-4">
+                        <div
+                            class="w-32 h-32 bg-[#FFF1B5] rounded-full transition-transform duration-500 group-hover:scale-105 shadow-sm">
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="font-serif italic text-[2.5rem] text-wine leading-tight">Burnout e<br>Sobrecarga
+                            </h3>
+                            <div class="w-16 h-px bg-earth/40"></div>
+                            <p class="text-base font-light text-earth pt-2">
+                                Auxílio na navegação pelo cansaço extremo, perda de sentido ou sobrecarga no trabalho,
+                                resgatando a vitalidade no dia a dia.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <!-- Service 3 -->
-                <div class="space-y-8 flex flex-col items-center md:items-start group px-4">
-                    <div
-                        class="w-32 h-32 bg-[#cca294] rounded-full transition-transform duration-500 group-hover:scale-105">
-                    </div>
-                    <div class="space-y-4">
-                        <h3 class="font-serif italic text-[2.5rem] text-wine leading-tight">Burnout e<br>Sobrecarga</h3>
-                        <div class="w-16 h-px bg-earth/40"></div>
-                        <p class="text-base font-light text-earth pt-2">
-                            Auxílio na navegação pelo cansaço extremo, perda de sentido ou sobrecarga no trabalho,
-                            resgatando a vitalidade no dia a dia.
-                        </p>
-                    </div>
+            </div>
+
+            </div>
+
+            <div class="mt-32 text-center max-w-4xl mx-auto">
+                <h2 class="font-serif italic text-4xl md:text-[3rem] text-wine md:leading-[1.4] mb-16">
+                    Venha exatamente como você é.
+                </h2>
+                <div class="flex justify-center">
+                    <a href="#contato"
+                        class="inline-flex items-center gap-3 bg-wine text-cream px-8 py-4 rounded-full shadow-sm tracking-widest text-sm font-semibold uppercase">
+                        Quero conhecer seu trabalho
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
                 </div>
             </div>
-            </div>
-
-            <div class="mt-20 flex justify-center">
-                <a href="#contato"
-                    class="inline-flex items-center gap-3 border border-wine text-wine px-8 py-4 rounded-full hover:bg-wine hover:text-cream transition-all shadow-sm tracking-widest text-sm font-semibold uppercase">
-                    Quero conhecer seu trabalho
-                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-            </div>
-        </section>
-
-        <!-- Breather Section -->
-        <section
-            class="bg-wine py-32 flex flex-col items-center justify-center text-center px-6 my-16 shadow-inner relative overflow-hidden">
-            <!-- Decorative accents -->
-            <div class="absolute -top-12 -left-12 w-48 h-48 bg-peach rounded-full opacity-10"></div>
-            <div class="absolute -bottom-16 -right-16 w-64 h-64 bg-sand rounded-full opacity-10"></div>
-
-            <h2 class="font-serif italic text-4xl md:text-[3.5rem] text-cream md:leading-[1.4] max-w-4xl z-10">
-                Você é bem-vinda aqui exatamente como você é.
-            </h2>
         </section>
 
         <!-- Approach Section -->
@@ -195,8 +202,10 @@
 
                 <!-- Right: Content -->
                 <div class="space-y-10 flex flex-col justify-center order-1 md:order-2">
-                    <h2 class="font-serif italic text-5xl md:text-[3.5rem] text-wine">Minha Abordagem</h2>
-                    <hr class="border-t border-earth/20 w-full mb-8">
+                    <div>
+                        <h2 class="font-serif italic text-5xl md:text-[3.5rem] text-wine mb-4">Minha Abordagem</h2>
+                        <hr class="border-t-[3px] border-earth/20 w-24 mb-8">
+                    </div>
 
                     <p class="text-[1.25rem] text-wine font-bold leading-relaxed">
                         Muitas pessoas com que eu trabalho enfrentam mudanças profundas, momentos de ruptura, desilusão
@@ -226,7 +235,7 @@
                         </p>
                         <div class="pt-8">
                             <a href="#contato"
-                                class="inline-flex items-center gap-3 bg-earth text-cream px-8 py-4 rounded-full hover:bg-wine transition-all shadow-sm tracking-widest text-sm font-semibold uppercase">
+                                class="inline-flex items-center gap-3 bg-wine text-cream px-8 py-4 rounded-full shadow-sm tracking-widest text-sm font-semibold uppercase">
                                 Marcar uma sessão inicial
                                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
                             </a>
@@ -237,9 +246,12 @@
         </section>
 
         <!-- FAQs -->
-        <section id="faq" class="bg-wine text-cream py-32 mt-16">
+        <section id="faq" class="bg-wine text-[#FAF0DB] py-32">
             <div class="max-w-4xl mx-auto px-6">
-                <h2 class="font-serif text-5xl md:text-[3.5rem] text-sand text-center mb-10">FAQs</h2>
+                <div class="flex flex-col items-center mb-10">
+                    <h2 class="font-serif text-5xl md:text-[3.5rem] text-sand text-center mb-4">FAQs</h2>
+                    <hr class="border-t-[3px] border-[#FAF0DB]/20 w-24">
+                </div>
                 <p
                     class="text-center font-serif text-[1.4rem] max-w-[42rem] mx-auto mb-20 text-cream/90 leading-relaxed">
                     Às vezes é difícil iniciar um processo tão íntimo quanto a terapia. Aqui você encontra respostas
@@ -249,43 +261,43 @@
                 <div class="space-y-0">
                     <!-- FAQ Items -->
                     <div
-                        class="border-t border-cream/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
-                        <div class="flex justify-between items-center text-xl font-light text-cream/90">
+                        class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        <div class="flex justify-between items-center text-xl font-light text-[#FAF0DB]/90">
                             <span>Eu nunca fiz terapia antes. O que posso esperar?</span>
                             <i data-lucide="plus"
-                                class="w-6 h-6 text-cream/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                                class="w-6 h-6 text-[#FAF0DB]/80 group-hover:rotate-90 transition-transform duration-300"></i>
                         </div>
                     </div>
                     <div
-                        class="border-t border-cream/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
-                        <div class="flex justify-between items-center text-xl font-light text-cream/90">
+                        class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        <div class="flex justify-between items-center text-xl font-light text-[#FAF0DB]/90">
                             <span>Como sei se somos uma boa combinação para trabalharmos juntas?</span>
                             <i data-lucide="plus"
-                                class="w-6 h-6 text-cream/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                                class="w-6 h-6 text-[#FAF0DB]/80 group-hover:rotate-90 transition-transform duration-300"></i>
                         </div>
                     </div>
                     <div
-                        class="border-t border-cream/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
-                        <div class="flex justify-between items-center text-xl font-light text-cream/90">
+                        class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        <div class="flex justify-between items-center text-xl font-light text-[#FAF0DB]/90">
                             <span>De quantas sessões eu vou precisar?</span>
                             <i data-lucide="plus"
-                                class="w-6 h-6 text-cream/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                                class="w-6 h-6 text-[#FAF0DB]/80 group-hover:rotate-90 transition-transform duration-300"></i>
                         </div>
                     </div>
                     <div
-                        class="border-t border-cream/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
-                        <div class="flex justify-between items-center text-xl font-light text-cream/90">
+                        class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        <div class="flex justify-between items-center text-xl font-light text-[#FAF0DB]/90">
                             <span>Com que frequência precisaremos nos encontrar?</span>
                             <i data-lucide="plus"
-                                class="w-6 h-6 text-cream/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                                class="w-6 h-6 text-[#FAF0DB]/80 group-hover:rotate-90 transition-transform duration-300"></i>
                         </div>
                     </div>
                     <div
-                        class="border-t border-b border-cream/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
-                        <div class="flex justify-between items-center text-xl font-light text-cream/90">
+                        class="border-t border-b border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6">
+                        <div class="flex justify-between items-center text-xl font-light text-[#FAF0DB]/90">
                             <span>O que acontece se eu precisar cancelar ou faltar a uma sessão?</span>
                             <i data-lucide="plus"
-                                class="w-6 h-6 text-cream/80 group-hover:rotate-90 transition-transform duration-300"></i>
+                                class="w-6 h-6 text-[#FAF0DB]/80 group-hover:rotate-90 transition-transform duration-300"></i>
                         </div>
                     </div>
                 </div>
@@ -293,9 +305,12 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contato" class="py-32 bg-cream">
+        <section id="contato" class="py-32 bg-[#FAF0DB]">
             <div class="max-w-7xl mx-auto px-6">
-                <h2 class="font-serif text-5xl md:text-[3.5rem] text-wine text-center mb-24">Contato</h2>
+                <div class="flex flex-col items-center mb-24">
+                    <h2 class="font-serif text-5xl md:text-[3.5rem] text-wine text-center mb-4">Contato</h2>
+                    <hr class="border-t-[3px] border-earth/20 w-24">
+                </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center max-w-5xl mx-auto">
                     <!-- Left: Profile Image -->
@@ -308,7 +323,7 @@
                     <div class="flex flex-col items-center md:items-start text-center md:text-left space-y-12">
                         <div>
                             <a href="mailto:contato@elisacampestrini.com.br"
-                                class="text-3xl font-serif italic text-wine border-b-2 border-wine pb-1 hover:text-earth hover:border-earth transition-colors">
+                                class="text-3xl font-serif italic text-wine border-b-[3px] border-wine pb-1">
                                 contato@elisacampestrini.com.br
                             </a>
                         </div>
@@ -316,15 +331,14 @@
                         <!-- CTA WhatsApp -->
                         <div>
                             <a href="#"
-                                class="inline-flex bg-wine text-cream px-12 py-4 rounded-full hover:bg-earth transition-all shadow-sm tracking-[0.2em] text-sm font-semibold uppercase leading-none pb-[1.1rem]">
+                                class="inline-flex bg-wine text-[#FAF0DB] px-8 py-4 rounded-full shadow-sm tracking-widest text-sm font-semibold uppercase">
                                 WhatsApp
                             </a>
                         </div>
 
                         <!-- Extra Icons/Info -->
                         <div class="pt-4 flex flex-col items-center md:items-start space-y-6">
-                            <a href="#"
-                                class="text-earth hover:text-wine transition-colors border border-earth/20 p-3 rounded-full hover:bg-peach/10">
+                            <a href="#" class="text-earth border border-earth/20 p-3 rounded-full">
                                 <i data-lucide="instagram" class="w-6 h-6"></i>
                             </a>
 
