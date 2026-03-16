@@ -45,10 +45,10 @@
     <header
         class="w-full py-4 px-6 md:px-12 flex justify-between items-center bg-[#FAF0DB]/95 backdrop-blur-sm relative z-50">
         <div class="relative">
-            <a href="#" class="block w-48 md:w-64 h-12 md:h-16">
+            <a href="#" class="block w-48 md:w-64 h-14 md:h-16">
                 <!-- Logo sobreposto em position absolute para crescer sem engrossar o header -->
                 <img src="assets/logo.png?v=2" alt="Elisa Campestrini"
-                    class="absolute -top-4 md:-top-12 left-0 h-[6.5rem] md:h-[16rem] w-auto drop-shadow-sm max-w-none">
+                    class="absolute -top-6 md:-top-12 left-0 h-[8rem] md:h-[16rem] w-auto drop-shadow-sm max-w-none">
             </a>
         </div>
         <nav class="hidden md:flex gap-10 text-earth text-sm font-semibold tracking-widest items-center">
@@ -60,7 +60,7 @@
                 Agendar uma sessão
             </a>
         </nav>
-        <button id="menu-btn" class="md:hidden text-wine mr-0">
+        <button id="menu-btn" class="md:hidden text-wine">
             <i data-lucide="menu" class="w-10 h-10"></i>
         </button>
     </header>
@@ -75,7 +75,7 @@
         <a href="#servicos" class="text-3xl font-serif italic text-[#EDC5B9] uppercase">Serviços</a>
         <a href="#abordagem" class="text-3xl font-serif italic text-[#EDC5B9] uppercase">Abordagem</a>
         <a href="#faq" class="text-3xl font-serif italic text-[#EDC5B9] uppercase">FAQ</a>
-        <a href="#contato" class="bg-sand text-wine px-10 py-4 rounded-full text-xl font-bold uppercase">
+        <a href="#contato" class="bg-[#EDC5B9] text-wine px-10 py-4 rounded-full text-xl font-bold uppercase">
             Agendar uma sessão
         </a>
     </div>
@@ -84,67 +84,64 @@
     <main>
 
 
-        <!-- Intro / About Section -->
-        <section id="sobre"
-            class="max-w-7xl mx-auto px-6 py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
-            
-            <!-- Text Box: First on Mobile -->
-            <div class="space-y-8 max-w-lg md:ml-12 overflow-visible order-1">
-                <div>
-                    <h2 class="font-serif italic text-5xl md:text-[3.5rem] md:leading-[1.1] text-wine mb-4">Um espaço de
-                        escuta e acolhimento</h2>
-                    <hr class="border-t-[3px] border-earth/20 w-full md:block hidden">
-                </div>
-                <!-- This p is hidden on mobile to show only one title/para box before image as requested -->
-                <div class="space-y-6 text-earth leading-relaxed font-normal">
-                    <p>
-                        Muitas pessoas chegam até aqui enfrentando momentos de transição, instabilidades, sobrecarga
-                        emocional ou a sensação de estarem desconectadas de si mesmas.
-                    </p>
-                    <div class="md:block hidden space-y-6">
-                        <p>
-                            Estou aqui para ajudar você a reconstruir a confiança em si mesma e a nutrir relações mais
-                            saudáveis, num ambiente onde você pode explorar suas emoções sem julgamentos. As dores mais
-                            profundas encontram cura quando podemos compartilhá-las da forma mais autêntica possível.
-                        </p>
-                        <p>
-                            Juntas, vamos abrir espaço para o que está emergindo na sua vida agora e transformar a forma
-                            como você enxerga sua própria história.
-                        </p>
+        <!-- Hero / About Section -->
+        <section id="sobre" class="max-w-7xl mx-auto px-6 pt-8 pb-12 md:pt-12 md:pb-24">
+
+            <!-- Mobile Layout: Title first, then image, then text -->
+            <div class="md:hidden">
+                <p class="text-xs tracking-[0.25em] uppercase text-wine/70 font-semibold mb-4">Online e presencial em São Paulo</p>
+                <h2 class="font-serif italic text-[2.75rem] leading-[1.1] text-wine mb-8">Um espaço de escuta e acolhimento</h2>
+
+                <!-- Arch Image -->
+                <div class="relative flex justify-center mb-10">
+                    <div class="w-full max-w-[360px] h-[420px] hero-arch overflow-hidden">
+                        <img src="assets/imagens-elisa/elisa_1.png?v=2" alt="Elisa Campestrini"
+                            class="w-full h-full object-cover object-[center_20%]">
                     </div>
                 </div>
-            </div>
 
-            <!-- Image: Second on Mobile -->
-            <div class="relative flex justify-center order-2">
-                <div class="w-full max-w-[500px] h-[400px] md:h-[650px] arch-frame shadow-lg overflow-hidden">
-                    <img src="assets/imagens-elisa/elisa_1.png?v=2" alt="Elisa Campestrini"
-                        class="w-full h-full object-cover object-[center_20%]">
-                </div>
-            </div>
-
-            <!-- CTA and remaining text below for mobile flow -->
-            <div class="order-3 md:col-span-2 md:hidden block space-y-6 mt-4">
-                <p>
-                    Estou aqui para ajudar você a reconstruir a confiança em si mesma e a nutrir relações mais
-                    saudáveis, num ambiente onde você pode explorar suas emoções sem julgamentos.
+                <h3 class="font-serif italic text-2xl text-wine mb-4">Você não precisa carregar tudo sozinha</h3>
+                <p class="text-earth leading-relaxed font-normal mb-8">
+                    Muitas pessoas chegam até aqui enfrentando momentos de transição, instabilidades, sobrecarga
+                    emocional ou a sensação de estarem desconectadas de si mesmas. Estou aqui para ajudar você a
+                    reconstruir a confiança em si mesma num ambiente de acolhimento.
                 </p>
-                <div class="pt-4">
-                    <a href="#contato"
-                        class="inline-flex items-center gap-3 bg-wine text-cream px-8 py-4 rounded-full shadow-sm tracking-widest text-sm font-semibold uppercase">
-                        Agendar uma sessão
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Desktop CTA -->
-            <div class="hidden md:block pt-6 order-4">
                 <a href="#contato"
                     class="inline-flex items-center gap-3 bg-wine text-cream px-8 py-4 rounded-full shadow-sm tracking-widest text-sm font-semibold uppercase">
                     Agendar uma sessão
-                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
+            </div>
+
+            <!-- Desktop Layout: Image LEFT, Text RIGHT -->
+            <div class="hidden md:grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <!-- Left: Tall Arch Image -->
+                <div class="relative flex justify-center">
+                    <div class="w-full max-w-[480px] h-[620px] lg:h-[700px] hero-arch overflow-hidden shadow-lg">
+                        <img src="assets/imagens-elisa/elisa_1.png?v=2" alt="Elisa Campestrini"
+                            class="w-full h-full object-cover object-[center_20%]">
+                    </div>
+                </div>
+
+                <!-- Right: Text Content -->
+                <div class="space-y-8 max-w-lg">
+                    <p class="text-xs tracking-[0.25em] uppercase text-wine/70 font-semibold">Online e presencial em São Paulo</p>
+                    <h2 class="font-serif italic text-[3.25rem] lg:text-[3.5rem] leading-[1.1] text-wine">Um espaço de
+                        escuta e acolhimento</h2>
+
+                    <h3 class="font-serif italic text-2xl text-wine font-bold">Você não precisa carregar tudo sozinha</h3>
+                    <p class="text-earth leading-relaxed font-normal">
+                        Muitas pessoas chegam até aqui enfrentando momentos de transição, instabilidades, sobrecarga
+                        emocional ou a sensação de estarem desconectadas de si mesmas. Estou aqui para ajudar você a
+                        reconstruir a confiança em si mesma e a nutrir relações mais saudáveis, num ambiente onde você
+                        pode explorar suas emoções sem julgamentos.
+                    </p>
+                    <div class="pt-2">
+                        <a href="#contato"
+                            class="inline-flex items-center gap-3 bg-wine text-cream px-8 py-4 rounded-full shadow-sm tracking-widest text-sm font-semibold uppercase">
+                            Agendar uma sessão
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 

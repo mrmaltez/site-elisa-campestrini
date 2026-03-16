@@ -36,3 +36,14 @@ p, li, span {
         border-radius: 600px 600px 0 0;
     }
 }
+
+/* Hero Arch: softer, taller arch matching reference proportions */
+.hero-arch {
+    border-radius: 999px 999px 0 0;
+}
+
+@media (min-width: 768px) {
+    .hero-arch {
+        border-radius: 300px 300px 0 0;
+    }
+}
