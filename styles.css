@@ -1,11 +1,25 @@
 /* Custom Styles for Elisa Campestrini Website */
 body {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     /* Ensure no text selection styling interferes too harshly */
     ::selection {
         background-color: #EDC5B9;
         color: #45171B;
     }
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Newsreader', serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+p, li, span {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 .arch-frame {
