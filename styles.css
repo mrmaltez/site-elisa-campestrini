@@ -54,3 +54,13 @@ p, li, span {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Button Hover State */
+a[class*="bg-wine"], button[class*="bg-wine"], a[class*="bg-[#EDC5B9]"] {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-flex;
+}
+
+a[class*="bg-wine"]:hover, button[class*="bg-wine"]:hover, a[class*="bg-[#EDC5B9]"]:hover {
+    transform: scale(1.05) translateY(-2px);
+}
