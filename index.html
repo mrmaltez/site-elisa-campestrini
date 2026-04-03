@@ -45,24 +45,26 @@
 <body class="bg-[#FEE8D8] text-earth font-sans antialiased text-lg font-normal">
     <!-- Header -->
     <header
-        class="w-full py-4 px-6 md:px-12 flex justify-between items-center bg-[#FEE8D8]/95 backdrop-blur-sm relative z-50">
-        <div class="flex items-center">
-            <a href="#" class="block">
-                <img src="assets/logo.svg" alt="Elisa Campestrini"
-                    class="h-28 md:h-44 w-auto drop-shadow-sm">
+        class="w-full py-[15px] px-[24px] md:px-12 flex justify-between items-center bg-[#FEE8D8]/95 backdrop-blur-sm relative z-50">
+        <div class="flex items-center m-0">
+            <a href="#" class="flex items-center m-0">
+                <img src="assets/logo.svg" alt="Elisa Campestrini" class="w-[160px] md:w-auto h-auto md:h-44 m-0 -ml-[12px] md:ml-0 translate-y-[5px] md:translate-y-0 drop-shadow-sm">
             </a>
         </div>
         <nav class="hidden md:flex gap-10 text-earth text-sm font-semibold tracking-widest items-center font-serif">
             <a href="#sobre" class="hover:text-wine transition-colors uppercase">Sobre</a>
             <a href="#servicos" class="hover:text-wine transition-colors uppercase">Serviços</a>
             <a href="#abordagem" class="hover:text-wine transition-colors uppercase">Abordagem</a>
+            <a href="#depoimentos" class="hover:text-wine transition-colors uppercase">Depoimentos</a>
             <a href="#faq" class="hover:text-wine transition-colors uppercase">FAQ</a>
-            <a href="#contato" class="bg-wine text-cream px-6 py-3 rounded-full uppercase leading-none pb-3.5">
-                Agendar uma sessão
-            </a>
+
         </nav>
-        <button id="menu-btn" class="md:hidden text-wine">
-            <i data-lucide="menu" class="w-10 h-10"></i>
+        <button id="menu-btn" class="md:hidden text-wine flex items-center justify-center focus:outline-none transition-transform hover:scale-105 m-0">
+            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" stroke="currentColor" stroke-width="2" class="w-10 h-10 m-0">
+                <line x1="0" y1="4" x2="32" y2="4"/>
+                <line x1="12" y1="12" x2="32" y2="12"/>
+                <line x1="0" y1="20" x2="32" y2="20"/>
+            </svg>
         </button>
     </header>
 
@@ -75,10 +77,9 @@
         <a href="#sobre" class="text-3xl font-serif italic text-[#EDC5B9] uppercase">Sobre</a>
         <a href="#servicos" class="text-3xl font-serif italic text-[#EDC5B9] uppercase">Serviços</a>
         <a href="#abordagem" class="text-3xl font-serif italic text-[#EDC5B9] uppercase">Abordagem</a>
+        <a href="#depoimentos" class="text-3xl font-serif italic text-[#EDC5B9] uppercase">Depoimentos</a>
         <a href="#faq" class="text-3xl font-serif italic text-[#EDC5B9] uppercase">FAQ</a>
-        <a href="#contato" class="bg-[#EDC5B9] text-wine px-10 py-4 rounded-full text-xl font-bold uppercase font-serif">
-            Agendar uma sessão
-        </a>
+
     </div>
 
     <!-- Main Content -->
@@ -89,13 +90,15 @@
         <section id="sobre" class="max-w-7xl mx-auto px-6 pt-8 pb-12 md:pt-12 md:pb-24">
 
             <!-- Mobile Layout: Title first, then image, then text -->
-            <div class="md:hidden px-4 flex flex-col items-center">
+            <div class="md:hidden flex flex-col items-center text-center">
                 <div class="w-full max-w-[320px]">
                     <div class="mb-4 inline-block">
-                        <p class="text-xs tracking-[0.25em] uppercase text-wine/70 font-semibold mb-1">TERAPIA ONLINE E PRESENCIAL EM BRASÍLIA</p>
+                        <p class="text-xs tracking-[0.25em] uppercase text-wine/70 font-semibold mb-1">TERAPIA ONLINE E
+                            PRESENCIAL EM BRASÍLIA</p>
                         <div class="h-[1.5px] bg-[#F4B630] w-full"></div>
                     </div>
-                    <h2 class="font-serif text-[2.2rem] leading-[1.1] text-wine mb-8">Um espaço de escuta e acolhimento</h2>
+                    <h2 class="font-serif text-[2.2rem] leading-[1.1] text-wine mb-8 px-2 md:px-0">Um espaço de escuta e acolhimento
+                    </h2>
 
                     <!-- Arch Image -->
                     <div class="relative flex justify-center mb-10">
@@ -105,10 +108,16 @@
                         </div>
                     </div>
 
-                    <div class="text-left">
-                        <h3 class="font-serif text-2xl text-wine mb-4">Psicoterapia humanista, caminhe com segurança em uma vida mais autêntica</h3>
-                        <p class="font-serif text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl mb-8">
-                            Com mais de 8 anos de experiência em psicologia clínica e uma extensa bagagem de estudos, minhas sessões de psicoterapia oferecem um espaço para você se sentir seguro em seu corpo, seus pensamentos e em sua história em desenvolvimento. Aqui você encontrará reflexão, insights e apoio prático para o tratamento da ansiedade, depressão e problemas nos relacionamentos, além de técnicas de neurociência para regulação emocional.
+                    <div class="text-center">
+                        <h3 class="font-serif text-2xl text-wine mb-4">Psicoterapia humanista, caminhe com segurança
+                            em uma existência autêntica
+                        </h3>
+                        <p class="font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl mb-8">
+                            Com mais de 8 anos de experiência em psicologia clínica e uma extensa bagagem de estudos,
+                            minhas sessões de terapia oferecem um espaço de reflexão, insights e apoio prático para o
+                            tratamento da ansiedade, depressão, traumas e problemas nos relacionamentos, além de
+                            técnicas de neurociência para regulação emocional.
+
                         </p>
                         <div class="flex justify-center">
                             <a href="#contato"
@@ -133,18 +142,25 @@
                 <!-- Right: Text Content -->
                 <div class="space-y-8 max-w-lg">
                     <div class="inline-block">
-                        <p class="text-xs tracking-[0.25em] uppercase text-wine/70 font-semibold">TERAPIA ONLINE E PRESENCIAL EM BRASÍLIA</p>
+                        <p class="text-xs tracking-[0.25em] uppercase text-wine/70 font-semibold">TERAPIA ONLINE E
+                            PRESENCIAL EM BRASÍLIA</p>
                         <div class="h-[2px] bg-[#F4B630] w-full mt-1"></div>
                     </div>
-                    
+
                     <div class="block">
-                        <h2 class="font-serif text-[3.25rem] lg:text-[3.5rem] leading-[1.1] text-wine inline-block">Um espaço de escuta e acolhimento</h2>
+                        <h2 class="font-serif text-[3.25rem] lg:text-[3.5rem] leading-[1.1] text-wine inline-block">Um
+                            espaço de escuta e acolhimento</h2>
                         <div class="h-[3px] bg-[#45171B] w-[280px] lg:w-[320px] mt-2"></div>
                     </div>
 
-                    <h3 class="font-serif text-2xl text-wine font-bold">Psicoterapia humanista, caminhe com segurança em uma vida mais autêntica</h3>
-                    <p class="font-serif text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl">
-                        Com mais de 8 anos de experiência em psicologia clínica e uma extensa bagagem de estudos, minhas sessões de psicoterapia oferecem um espaço para você se sentir seguro em seu corpo, seus pensamentos e em sua história em desenvolvimento. Aqui você encontrará reflexão, insights e apoio prático para o tratamento da ansiedade, depressão e problemas nos relacionamentos, além de técnicas de neurociência para regulação emocional.
+                    <h3 class="font-serif text-2xl text-wine font-bold">Psicoterapia humanista, caminhe com segurança em
+                        uma existência autêntica</h3>
+                    <p class="font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl">
+                        Com mais de 8 anos de experiência em psicologia clínica e uma extensa bagagem de estudos, minhas
+                        sessões de terapia oferecem um espaço de reflexão, insights e apoio prático para o tratamento da
+                        ansiedade, depressão, traumas e problemas nos relacionamentos, além de técnicas de neurociência
+                        para regulação emocional.
+
                     </p>
                     <div class="pt-2 flex justify-start">
                         <a href="#contato"
@@ -165,8 +181,10 @@
                         <hr class="border-t-[3px] border-earth/20 w-full">
                     </div>
                     <div class="md:w-2/3">
-                        <p class="font-serif text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl">
-                            Eu ofereço um espaço calmo e seguro para que você possa navegar as mudanças da vida e fazer escolhas autênticas. Trabalharemos em conjunto para a sua reconexão consigo mesmo e com os outros. Terapia em duas modalidades: online e presencial em Brasília.
+                        <p class="font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl">
+                            Eu ofereço um espaço calmo e seguro para que você possa navegar as mudanças da vida e fazer
+                            escolhas autênticas. Trabalharemos em conjunto para a sua reconexão consigo mesmo e com os
+                            outros. Terapia em duas modalidades: online e presencial em Brasília.
                         </p>
                     </div>
                 </div>
@@ -175,44 +193,54 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 text-center">
                     <!-- Service 1 -->
-                    <div class="space-y-8 flex flex-col items-center group px-4">
+                    <div class="space-y-8 flex flex-col items-center group">
                         <div
                             class="w-32 h-32 bg-[#FAE8BA] rounded-full transition-transform duration-500 group-hover:scale-105 shadow-sm">
                         </div>
                         <div class="space-y-4">
-                            <h3 class="font-serif italic text-[2.5rem] text-wine leading-tight">Suporte em momentos difíceis & Escolhas conscientes</h3>
+                            <h3 class="font-serif italic text-[2rem] md:text-[2.5rem] text-wine leading-tight">Suporte em momentos
+                                difíceis & Mudanças conscientes</h3>
                             <hr class="border-t-[1.5px] border-earth/40 w-full mb-4">
-                            <p class="font-serif text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl pt-2">
-                                Existem fases na vida de maior vulnerabilidade nas quais, para atravessá-las, se faz necessário um suporte. Com acolhimento e apoio, abre-se a possibilidade de olhar para sua experiência interna e fazer escolhas mais conscientes, alinhadas com quem você é e com o que deseja para sua vida.
+                            <p class="font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl pt-2">
+                                Existem fases na vida de maior vulnerabilidade nas quais se faz necessário um suporte
+                                psicológico. Com acolhimento e apoio, se abre a possibilidade de olhar para sua
+                                experiência interna e fazer mudanças conscientes, alinhadas com o que deseja para sua
+                                vida. Neste espaço é bem-vindo ser você.
                             </p>
                         </div>
                     </div>
                     <!-- Service 2 -->
-                    <div class="space-y-8 flex flex-col items-center group px-4">
+                    <div class="space-y-8 flex flex-col items-center group">
                         <div
                             class="w-32 h-32 bg-[#FAE8BA] rounded-full transition-transform duration-500 group-hover:scale-105 shadow-sm">
                         </div>
                         <div class="space-y-4">
-                            <h3 class="font-serif italic text-[2.5rem] text-wine leading-tight">
+                            <h3 class="font-serif italic text-[2rem] md:text-[2.5rem] text-wine leading-tight">
                                 Um novo olhar sobre você: Auto aceitação & Relacionamentos
                             </h3>
                             <hr class="border-t-[1.5px] border-earth/40 w-full mb-4">
-                            <p class="font-serif text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl pt-2">
-                                Quando alguém consegue acolher a si mesmo com suas qualidades e desafios, tende a se relacionar de maneira mais genuína, apresentando com tranquilidade no relacionamento suas necessidades, limites e emoções. Sua compreensão de si muda e assim pode se relacionar a partir de quem se é, passando assim a também compreender melhor o outro como ele é. 
+                            <p class="font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl pt-2">
+                                Quando alguém consegue aceitar a si mesmo algo novo pode acontecer. Você tende a se
+                                relacionar de maneira mais genuína, apresentando suas necessidades, limites e emoções
+                                nos relacionamentos. Sua compreensão de si amplia, além de aprender a compreender melhor
+                                o outro como ele é. A relação se transforma pois parte agora de um lugar real.
                             </p>
                         </div>
                     </div>
                     <!-- Service 3 -->
-                    <div class="space-y-8 flex flex-col items-center group px-4">
+                    <div class="space-y-8 flex flex-col items-center group">
                         <div
                             class="w-32 h-32 bg-[#FAE8BA] rounded-full transition-transform duration-500 group-hover:scale-105 shadow-sm">
                         </div>
                         <div class="space-y-4">
-                            <h3 class="font-serif italic text-[2.5rem] text-wine leading-tight">Regulação emocional 
+                            <h3 class="font-serif italic text-[2rem] md:text-[2.5rem] text-wine leading-tight">Regulação emocional &
+                                Integração dos sentimentos
                             </h3>
                             <hr class="border-t-[1.5px] border-earth/40 w-full mb-4">
-                            <p class="font-serif text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl pt-2">
-                                Exercite a habilidade de reconhecer, compreender e lidar com as suas emoções de forma equilibrada e consciente. Ao acolher e validar a experiência emocional, você aprenderá gradualmente a reconhecer e integrar seus sentimentos, em vez de evitá-los ou reprimi-los. Assim irá gerar comportamentos diferentes e mais regulados ao seu ambiente e às suas relações, podendo estabelecer conexões mais honestas com você e com os outros.
+                            <p class="font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl pt-2">
+                                Ao validar as suas emoções, você cria um diferente caminho neural, o do reconhecimento e
+                                da integração. Em vez de evitar ou reprimir, você poderá aprender a riqueza que há
+                                naquilo que você sente.
                             </p>
                         </div>
                     </div>
@@ -246,22 +274,116 @@
                     </div>
 
                     <div class="space-y-8 max-w-3xl">
-                        <p class="font-serif text-[1.2rem] leading-relaxed text-earth font-light">
-                            Minha prática clínica é fundamentada na Abordagem Centrada na Pessoa, desenvolvida por Carl Rogers, e parte do princípio de que cada indivíduo possui, em si, recursos para crescimento, transformação e cura. Ofereço um espaço de escuta empática, acolhimento e autenticidade, onde você pode entrar em contato com sua experiência de forma segura e sem julgamentos. Acredito que, quando há um ambiente terapêutico facilitador, torna-se possível se reconectar consigo mesmo, compreender suas emoções e construir caminhos mais alinhados com quem você é.
+                        <p class="font-serif text-[1.125rem] md:text-[1.3rem] leading-relaxed text-earth font-light">
+                            Minha prática clínica é fundamentada na psicologia humanista e parte do princípio de que
+                            cada indivíduo possui recursos internos para crescimento e transformação. Ofereço um espaço
+                            de escuta empática, acolhimento e autenticidade, onde você pode entrar em contato com sua
+                            experiência de forma segura e sem julgamentos. Nesses anos de psicologia clínica tenho visto
+                            na prática que estar em um ambiente terapêutico seguro facilita a conexão consigo mesmo, a
+                            compreensão das emoções e a construção de caminhos mais alinhados com quem você é.
+
                         </p>
-                        <p class="font-serif text-[1.2rem] leading-relaxed text-earth font-light">
-                            Meu trabalho também é orientado por uma perspectiva trauma-informed, reconhecendo como experiências difíceis podem impactar o corpo, as emoções e a forma de se relacionar consigo e com o mundo. Integro recursos de regulação emocional que envolvem o corpo, respeitando o ritmo de cada pessoa e priorizando sempre a sensação de segurança. A partir de conhecimentos da neurociência, compreendo as respostas emocionais não como fraquezas, mas como adaptações do organismo, e trabalho para ampliar a capacidade de autorregulação e presença.
-                        </p>
-                        <p class="font-serif text-[1.2rem] leading-relaxed text-earth font-light">
-                            Assim, a terapia se torna um processo de reconexão — com o corpo, com as emoções e com a própria história — favorecendo maior autoaceitação, autonomia e autenticidade. Mais do que buscar respostas prontas, o processo terapêutico convida você a desenvolver um olhar mais gentil e consciente sobre si mesmo, possibilitando escolhas mais alinhadas com seus valores e uma forma de viver mais integrada e significativa.
+                        <p class="font-serif text-[1.125rem] md:text-[1.3rem] leading-relaxed text-earth font-light">
+                            Nas sessões de terapia faço uso também da psicoterapia corporal e da perspectiva informada
+                            sobre trauma, reconhecendo como experiências traumáticas podem impactar o corpo, as emoções
+                            e a forma de se relacionar consigo e com o mundo. Integro recursos de regulação emocional
+                            que envolvem o corpo, respiração, neurociência e técnicas psicossomáticas. A partir de
+                            conhecimentos da neuropsicologia, compreendo as respostas emocionais não como fraquezas, mas
+                            como adaptações do organismo e informações valiosas pro processo de terapia, e trabalho para
+                            ampliar a capacidade de autorregulação e presença no seu corpo e na sua vida.
+
                         </p>
                     </div>
-                        <div class="pt-8 flex justify-center md:justify-start">
-                            <a href="#contato"
-                                class="inline-flex items-center gap-3 bg-wine text-cream px-8 py-4 rounded-full shadow-sm tracking-widest text-sm font-semibold uppercase font-serif">
-                                Agendar uma sessão
-                            </a>
+                    <div class="pt-8 flex justify-center md:justify-start">
+                        <a href="#contato"
+                            class="inline-flex items-center gap-3 bg-wine text-cream px-8 py-4 rounded-full shadow-sm tracking-widest text-sm font-semibold uppercase font-serif">
+                            Agendar uma sessão
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meus Serviços (Cloned) -->
+        <section class="py-20 md:py-32 bg-[#F7DBD0]">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+                    <div class="md:w-1/3">
+                        <h2 class="font-serif italic text-4xl md:text-[3.5rem] text-wine mb-4">Quando algo dentro pede
+                            cuidado</h2>
+                        <hr class="border-t-[3px] border-earth/20 w-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl">
+                            Como o processo de terapia comigo pode te ajudar em diferentes formas de sofrimento
+                            emocional
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="border-t border-earth/20 mb-20 w-full">
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 text-center">
+                    <!-- Service 1 -->
+                    <div class="space-y-8 flex flex-col items-center group">
+                        <div
+                            class="w-32 h-32 bg-[#FAE8BA] rounded-full transition-transform duration-500 group-hover:scale-105 shadow-sm">
                         </div>
+                        <div class="space-y-4">
+                            <h3 class="font-serif italic text-[2rem] md:text-[2.5rem] text-wine leading-tight">Ansiedade & Sintomas
+                                físicos</h3>
+                            <hr class="border-t-[1.5px] border-earth/40 w-full mb-4">
+                            <p class="font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl pt-2">
+                                Com um olhar atento às informações que o corpo expressa, os sintomas da ansiedade se
+                                tornam mais facilmente compreendidos. A ansiedade não é apenas um conjunto de
+                                pensamentos acelerados, ela se expressa por meio de sintomas físicos como respiração
+                                superficial, aperto no peito, tensão muscular crônica, entre outros. Conhecer essa
+                                expressão do corpo e saber lidar com ela é fundamental para retomar o senso de segurança
+                                para ter uma vida leve.
+
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="space-y-8 flex flex-col items-center group">
+                        <div
+                            class="w-32 h-32 bg-[#FAE8BA] rounded-full transition-transform duration-500 group-hover:scale-105 shadow-sm">
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="font-serif italic text-[2rem] md:text-[2.5rem] text-wine leading-tight">
+                                Depressão & Perda de sentido
+                            </h3>
+                            <hr class="border-t-[1.5px] border-earth/40 w-full mb-4">
+                            <p class="font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl pt-2">
+                                Um sintoma do transtorno depressivo comum é a perda de sentido. O que era importante
+                                antes deixa de ter significado, existe uma desconexão de si e dos seus desejos, daquilo
+                                que te faz sentir vivo e conectado à sua vida. A terapia tem como foco favorecer a
+                                conexão com sua experiência interna e dessa maneira desenvolver estratégias para se você
+                                reencontrar com aquilo que te preenche existencialmente.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="space-y-8 flex flex-col items-center group">
+                        <div
+                            class="w-32 h-32 bg-[#FAE8BA] rounded-full transition-transform duration-500 group-hover:scale-105 shadow-sm">
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="font-serif italic text-[2rem] md:text-[2.5rem] text-wine leading-tight">Autocobrança excessiva &
+                                Não ser suficiente
+                            </h3>
+                            <hr class="border-t-[1.5px] border-earth/40 w-full mb-4">
+                            <p class="font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-earth font-light max-w-3xl pt-2">
+                                A sensação constante de estar em dívida é um forte fator adoecedor para a saúde mental.
+                                Com o tempo essa sensação pode gerar uma inadequação difícil de lidar pois é como se
+                                nada fosse suficiente para acalmar essa voz interior e isso traz um senso de
+                                inferioridade, autocrítica e o sintoma mais perigoso de todos, o isolamento social. É
+                                possível ter uma relação diferente com as responsabilidades que inclua também um cuidado
+                                consigo, com menos exigências e mais gentileza. O seu valor não está condicionado ao seu
+                                desempenho.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -289,76 +411,317 @@
                                 class="w-6 h-6 text-[#FAF0DB]/80 transition-transform duration-300 faq-icon"></i>
                         </div>
                         <div class="max-h-0 overflow-hidden transition-all duration-500 faq-answer">
-                            <p class="pt-6 font-serif text-[1.4rem] leading-relaxed text-[#FEE8D8]/70 font-light max-w-3xl">
-                                A primeira sessão é um momento de conhecimento mútuo. Você terá liberdade para contar o
-                                que te trouxe à terapia e para tirar dúvidas sobre como trabalho. É um espaço seguro,
-                                livre de julgamentos, focado na sua experiência.
+                            <p
+                                class="pt-6 font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-[#FEE8D8]/70 font-light max-w-3xl">
+                                Você pode esperar um espaço seguro onde você não vai ser julgado, onde suas experiências
+                                serão levadas a sério e seu processo será conduzido no seu ritmo. Você vai poder falar o
+                                que quiser e no tempo que quiser, com confidencialidade, acolhimento, aceitação e
+                                genuinidade.<br class="hidden md:block"><br class="hidden md:block">
+
+                                Ao longo do processo, vamos construindo juntos uma compreensão mais profunda dos seus
+                                sentimentos, das suas experiências e da forma como você tem se relacionado consigo mesmo
+                                e com o mundo. Só você pode ser o especialista da sua vida, o meu papel é o de facilitar
+                                junto com você um espaço relacional favorável para a clareza, a autonomia e a conexão
+                                com aquilo que faz sentido, o que faz sentir.
+                                Além disso, não é preciso saber exatamente o que dizer ou “como fazer terapia”, algumas
+                                das sessões mais importantes iniciam com o “não saber” como ponto de partida.
+
                             </p>
                         </div>
                     </div>
                     <div
                         class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6 faq-item">
                         <div class="flex justify-between items-center text-xl font-normal text-[#FAF0DB]/90">
-                            <span>Como sei se somos uma boa combinação para trabalharmos juntas?</span>
+                            <span>Como sei se escolhi a psicóloga certa?</span>
                             <i data-lucide="plus"
                                 class="w-6 h-6 text-[#FAF0DB]/80 transition-transform duration-300 faq-icon"></i>
                         </div>
                         <div class="max-h-0 overflow-hidden transition-all duration-500 faq-answer">
-                            <p class="pt-6 font-serif text-[1.4rem] leading-relaxed text-[#FEE8D8]/70 font-light max-w-3xl">
-                                A conexão entre terapeuta e cliente é fundamental. Nas primeiras sessões, você poderá
-                                sentir se a forma como eu escuto e pontuo as questões faz sentido para você. A terapia é
-                                um processo colaborativo de confiança.
+                            <p
+                                class="pt-6 font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-[#FEE8D8]/70 font-light max-w-3xl">
+                                A relação terapêutica é parte central da terapia, então é muito importante que você se
+                                sinta à vontade comigo. É natural que sinta medo de se expor, mas saiba que na terapia
+                                você não será julgado, e até seus medos serão bem-vindos, são expressões de
+                                características profundas suas. Conforme formos nos conhecendo e criando um vínculo,
+                                estar em terapia se tornará mais fluido.<br class="hidden md:block"><br
+                                    class="hidden md:block">
+
+                                Logo no início você já poderá perceber como se sente comigo, se consegue se abrir, se
+                                algo na forma como eu conduzo faz sentido para você ou não faz. Tudo isso é informação e
+                                poderá ser levado em consideração no seu processo de terapia.
+                                A terapia não precisa ser “perfeita”, mas precisa ser um lugar onde você se sinta
+                                minimamente confortável para ir se aproximando de si mesmo.
+
                             </p>
                         </div>
                     </div>
                     <div
                         class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6 faq-item">
                         <div class="flex justify-between items-center text-xl font-normal text-[#FAF0DB]/90">
-                            <span>De quantas sessões eu vou precisar?</span>
+                            <span>Como saber se a terapia é pra mim?</span>
                             <i data-lucide="plus"
                                 class="w-6 h-6 text-[#FAF0DB]/80 transition-transform duration-300 faq-icon"></i>
                         </div>
                         <div class="max-h-0 overflow-hidden transition-all duration-500 faq-answer">
-                            <p class="pt-6 font-serif text-[1.4rem] leading-relaxed text-[#FEE8D8]/70 font-light max-w-3xl">
-                                O tempo de terapia é muito singular. Algumas demandas podem ser trabalhadas em períodos
-                                mais curtos, enquanto outros processos de autoconhecimento profundo podem levar mais
-                                tempo. Vamos avaliar isso juntas continuamente.
+                            <p
+                                class="pt-6 font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-[#FEE8D8]/70 font-light max-w-3xl">
+                                A terapia é como um óculos novo que você usa quando está tendo dificuldades em enxergar
+                                a vida. A terapia te oferece uma nova visão sobre si e sobre o mundo. É um espaço de
+                                descoberta. Não há um perfil ideal de pessoa que precisa de terapia, é mais um estado de
+                                espírito, uma busca por se compreender e viver melhor. Se você sente que algo não está
+                                bem ou percebe um desejo de mudança, experimente uma sessão. A melhor forma de saber é
+                                experienciando e sentindo como fica.
+
                             </p>
                         </div>
                     </div>
                     <div
                         class="border-t border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6 faq-item">
                         <div class="flex justify-between items-center text-xl font-normal text-[#FAF0DB]/90">
-                            <span>Com que frequência precisaremos nos encontrar?</span>
+                            <span>Sua terapia funciona? É um bom investimento?</span>
                             <i data-lucide="plus"
                                 class="w-6 h-6 text-[#FAF0DB]/80 transition-transform duration-300 faq-icon"></i>
                         </div>
                         <div class="max-h-0 overflow-hidden transition-all duration-500 faq-answer">
-                            <p class="pt-6 font-serif text-[1.4rem] leading-relaxed text-[#FEE8D8]/70 font-light max-w-3xl">
-                                Geralmente, iniciamos com sessões semanais para estabelecer um bom ritmo de trabalho e
-                                vínculo. Conforme o processo avança, podemos reavaliar essa frequência de acordo com a
-                                sua necessidade e bem-estar.
+                            <p
+                                class="pt-6 font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-[#FEE8D8]/70 font-light max-w-3xl">
+                                O investimento em se conhecer e estabelecer uma nova relação consigo e com o mundo é
+                                sempre um bom investimento na minha opinião. Não posso garantir que todos os seus
+                                objetivos serão alcançados mas farei o meu melhor para facilitar este caminho pra
+                                você.<br class="hidden md:block"><br class="hidden md:block">
+
+                                O processo de terapia comigo te oferece um espaço de escuta cuidadosa, atenta e genuína.
+                                Comigo você poderá aprender a aceitar sua existência e honrá-la para que viva consciente
+                                de suas necessidades emocionais, corporais e psíquicas. Você poderá compreender seu
+                                contexto, como se dão suas relações e que lugar você ocupa nelas, quais são seus desejos
+                                para sua vida e seu futuro, entre tantas outras possibilidades que a este encontro
+                                poderá proporcionar.
+
                             </p>
                         </div>
                     </div>
                     <div
                         class="border-t border-b border-[#FAF0DB]/20 py-8 group cursor-pointer hover:bg-white/5 transition-colors px-6 faq-item">
                         <div class="flex justify-between items-center text-xl font-normal text-[#FAF0DB]/90">
-                            <span>O que acontece se eu precisar cancelar ou faltar a uma sessão?</span>
+                            <span>O que acontece se eu cancelar uma sessão?</span>
                             <i data-lucide="plus"
                                 class="w-6 h-6 text-[#FAF0DB]/80 transition-transform duration-300 faq-icon"></i>
                         </div>
                         <div class="max-h-0 overflow-hidden transition-all duration-500 faq-answer">
-                            <p class="pt-6 font-serif text-[1.4rem] leading-relaxed text-[#FEE8D8]/70 font-light max-w-3xl">
-                                Trabalhamos com uma política de cancelamento acordada na primeira sessão. Geralmente,
-                                pedimos um aviso prévio para que possamos reorganizar a agenda e, se possível, repor o
-                                horário dentro da mesma semana.
+                            <p
+                                class="pt-6 font-serif text-[1.125rem] md:text-[1.4rem] leading-relaxed text-[#FEE8D8]/70 font-light max-w-3xl">
+                                Política de cancelamento<br class="hidden md:block"><br class="hidden md:block">
+
+                                O não comparecimento deve ser avisado com 24h de antecedência no mínimo ou, caso avisado
+                                em cima da hora, e não puder ser remarcado para a mesma semana, a sessão será cobrada.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Testimonials Section -->
+        <section id="depoimentos" class="py-20 md:py-32 bg-[#F7DBD0] overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 relative">
+                <div class="carousel-wrapper relative group">
+                    <!-- Carousel Controls -->
+                    <button id="prev-btn"
+                        class="absolute left-2 md:-left-4 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md border border-wine/10 hover:bg-[#FEE8D8] hover:scale-105 text-wine p-3 rounded-full transition-all opacity-0 group-hover:opacity-100 hidden md:block">
+                        <i data-lucide="chevron-left" class="w-8 h-8"></i>
+                    </button>
+                    <button id="next-btn"
+                        class="absolute right-2 md:-right-4 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md border border-wine/10 hover:bg-[#FEE8D8] hover:scale-105 text-wine p-3 rounded-full transition-all opacity-0 group-hover:opacity-100 hidden md:block">
+                        <i data-lucide="chevron-right" class="w-8 h-8"></i>
+                    </button>
+
+                    <div id="testimonial-carousel"
+                        class="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-12 items-stretch pt-4 px-[7.5%] md:px-[calc(50%-225px)]">
+                        <!-- Card 1 -->
+                        <div
+                            class="testimonial-card snap-center shrink-0 w-[85%] md:w-[450px] bg-white/40 p-8 md:p-12 rounded-3xl shadow-sm flex flex-col justify-between border border-white/50">
+                            <div class="space-y-6">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-wine/30">
+                                    <path d="M7 17a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5zm10 0a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5z"/>
+                                </svg>
+                                <p class="font-serif text-[1.2rem] md:text-[1.4rem] leading-relaxed text-earth italic">
+                                    "Encontrei na Elisa um espaço de escuta muito genuíno. A psicoterapia tem me ajudado
+                                    a entender melhor minhas emoções e a lidar com a ansiedade de forma mais leve."
+                                </p>
+                            </div>
+                            <div class="mt-8">
+                                <p class="font-serif font-bold text-wine text-xl">Ana P.</p>
+                                <div class="h-0.5 bg-peach w-12 mt-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div
+                            class="testimonial-card snap-center shrink-0 w-[85%] md:w-[450px] bg-white/40 p-8 md:p-12 rounded-3xl shadow-sm flex flex-col justify-between border border-white/50">
+                            <div class="space-y-6">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-wine/30">
+                                    <path d="M7 17a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5zm10 0a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5z"/>
+                                </svg>
+                                <p class="font-serif text-[1.2rem] md:text-[1.4rem] leading-relaxed text-earth italic">
+                                    "O processo terapêutico tem sido transformador. Sinto que finalmente tenho um lugar
+                                    seguro para falar sobre minhas vulnerabilidades sem medo de julgamentos."
+                                </p>
+                            </div>
+                            <div class="mt-8">
+                                <p class="font-serif font-bold text-wine text-xl">Carlos R.</p>
+                                <div class="h-0.5 bg-peach w-12 mt-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div
+                            class="testimonial-card snap-center shrink-0 w-[85%] md:w-[450px] bg-white/40 p-8 md:p-12 rounded-3xl shadow-sm flex flex-col justify-between border border-white/50">
+                            <div class="space-y-6">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-wine/30">
+                                    <path d="M7 17a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5zm10 0a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5z"/>
+                                </svg>
+                                <p class="font-serif text-[1.2rem] md:text-[1.4rem] leading-relaxed text-earth italic">
+                                    "A abordagem da Elisa é muito acolhedora. Sinto que ela realmente me escuta e me
+                                    ajuda a encontrar caminhos mais autênticos para a minha vida."
+                                </p>
+                            </div>
+                            <div class="mt-8">
+                                <p class="font-serif font-bold text-wine text-xl">Mariana S.</p>
+                                <div class="h-0.5 bg-peach w-12 mt-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div
+                            class="testimonial-card snap-center shrink-0 w-[85%] md:w-[450px] bg-white/40 p-8 md:p-12 rounded-3xl shadow-sm flex flex-col justify-between border border-white/50">
+                            <div class="space-y-6">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-wine/30">
+                                    <path d="M7 17a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5zm10 0a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5z"/>
+                                </svg>
+                                <p class="font-serif text-[1.2rem] md:text-[1.4rem] leading-relaxed text-earth italic">
+                                    "Tive uma experiência incrível nas sessões online. A praticidade aliada à
+                                    profundidade do atendimento faz toda a diferença no meu dia a dia."
+                                </p>
+                            </div>
+                            <div class="mt-8">
+                                <p class="font-serif font-bold text-wine text-xl">João M.</p>
+                                <div class="h-0.5 bg-peach w-12 mt-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div
+                            class="testimonial-card snap-center shrink-0 w-[85%] md:w-[450px] bg-white/40 p-8 md:p-12 rounded-3xl shadow-sm flex flex-col justify-between border border-white/50">
+                            <div class="space-y-6">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-wine/30">
+                                    <path d="M7 17a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5zm10 0a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5z"/>
+                                </svg>
+                                <p class="font-serif text-[1.2rem] md:text-[1.4rem] leading-relaxed text-earth italic">
+                                    "As técnicas de regulação emocional que aprendi nas sessões têm sido fundamentais
+                                    para o meu bem-estar. Recomendo muito o trabalho da Elisa."
+                                </p>
+                            </div>
+                            <div class="mt-8">
+                                <p class="font-serif font-bold text-wine text-xl">Beatriz F.</p>
+                                <div class="h-0.5 bg-peach w-12 mt-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div
+                            class="testimonial-card snap-center shrink-0 w-[85%] md:w-[450px] bg-white/40 p-8 md:p-12 rounded-3xl shadow-sm flex flex-col justify-between border border-white/50">
+                            <div class="space-y-6">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-wine/30">
+                                    <path d="M7 17a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5zm10 0a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5z"/>
+                                </svg>
+                                <p class="font-serif text-[1.2rem] md:text-[1.4rem] leading-relaxed text-earth italic">
+                                    "Sou muito grata pelo acompanhamento. A psicoterapia me ajudou a passar por um
+                                    momento de luto com muito mais consciência e acolhimento."
+                                </p>
+                            </div>
+                            <div class="mt-8">
+                                <p class="font-serif font-bold text-wine text-xl">Lucia T.</p>
+                                <div class="h-0.5 bg-peach w-12 mt-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div
+                            class="testimonial-card snap-center shrink-0 w-[85%] md:w-[450px] bg-white/40 p-8 md:p-12 rounded-3xl shadow-sm flex flex-col justify-between border border-white/50">
+                            <div class="space-y-6">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-wine/30">
+                                    <path d="M7 17a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5zm10 0a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5z"/>
+                                </svg>
+                                <p class="font-serif text-[1.2rem] md:text-[1.4rem] leading-relaxed text-earth italic">
+                                    "A Elisa é uma excelente profissional. Sinto que o espaço que ela cria permite que
+                                    eu explore partes de mim que eu nem sabia que precisavam de atenção."
+                                </p>
+                            </div>
+                            <div class="mt-8">
+                                <p class="font-serif font-bold text-wine text-xl">Gabriel V.</p>
+                                <div class="h-0.5 bg-peach w-12 mt-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div
+                            class="testimonial-card snap-center shrink-0 w-[85%] md:w-[450px] bg-white/40 p-8 md:p-12 rounded-3xl shadow-sm flex flex-col justify-between border border-white/50">
+                            <div class="space-y-6">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-wine/30">
+                                    <path d="M7 17a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5zm10 0a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5z"/>
+                                </svg>
+                                <p class="font-serif text-[1.2rem] md:text-[1.4rem] leading-relaxed text-earth italic">
+                                    "A abordagem centrada na pessoa faz todo o sentido para mim. Sinto que sou o
+                                    protagonista da minha história e a Elisa é uma guia excepcional."
+                                </p>
+                            </div>
+                            <div class="mt-8">
+                                <p class="font-serif font-bold text-wine text-xl">Fernanda L.</p>
+                                <div class="h-0.5 bg-peach w-12 mt-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Card 9 -->
+                        <div
+                            class="testimonial-card snap-center shrink-0 w-[85%] md:w-[450px] bg-white/40 p-8 md:p-12 rounded-3xl shadow-sm flex flex-col justify-between border border-white/50">
+                            <div class="space-y-6">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-wine/30">
+                                    <path d="M7 17a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5zm10 0a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5z"/>
+                                </svg>
+                                <p class="font-serif text-[1.2rem] md:text-[1.4rem] leading-relaxed text-earth italic">
+                                    "Depois de passar por vários terapeutas, finalmente encontrei alguém que realmente
+                                    ressoa com o que eu busco: autenticidade e empatia."
+                                </p>
+                            </div>
+                            <div class="mt-8">
+                                <p class="font-serif font-bold text-wine text-xl">Ricardo K.</p>
+                                <div class="h-0.5 bg-peach w-12 mt-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Card 10 -->
+                        <div
+                            class="testimonial-card snap-center shrink-0 w-[85%] md:w-[450px] bg-white/40 p-8 md:p-12 rounded-3xl shadow-sm flex flex-col justify-between border border-white/50">
+                            <div class="space-y-6">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-wine/30">
+                                    <path d="M7 17a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5zm10 0a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h3v5.5a4.5 4.5 0 0 1-4.5 4.5z"/>
+                                </svg>
+                                <p class="font-serif text-[1.2rem] md:text-[1.4rem] leading-relaxed text-earth italic">
+                                    "As sessões têm me ajudado a melhorar meus relacionamentos e a estabelecer limites
+                                    saudáveis. Sinto-me muito mais segura."
+                                </p>
+                            </div>
+                            <div class="mt-8">
+                                <p class="font-serif font-bold text-wine text-xl">Patrícia G.</p>
+                                <div class="h-0.5 bg-peach w-12 mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
         <!-- Contact Section -->
         <section id="contato" class="py-20 md:py-32 bg-[#FEE8D8]">
@@ -396,25 +759,45 @@
                         <div class="pt-4 flex flex-col items-center md:items-start space-y-12">
                             <div class="flex gap-8">
                                 <!-- Doctoralia -->
-                                <a href="#" title="Doctoralia" class="text-wine/70 hover:text-wine transition-colors">
-                                    <i data-lucide="stethoscope" class="w-7 h-7"></i>
+                                <a href="https://www.doctoralia.com.br/elisa-campestrini/psicologo/brasilia"
+                                    target="_blank" title="Doctoralia"
+                                    class="text-wine/70 hover:text-wine transition-colors">
+                                    <i data-lucide="stethoscope" class="w-8 h-8"></i>
                                 </a>
                                 <!-- Instagram -->
-                                <a href="#" title="Instagram" class="text-wine/70 hover:text-wine transition-colors">
-                                    <i data-lucide="instagram" class="w-7 h-7"></i>
+                                <a href="https://www.instagram.com/psielisacampestrini/" target="_blank"
+                                    title="Instagram" class="text-wine/70 hover:text-wine transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-8 h-8">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                    </svg>
                                 </a>
                                 <!-- WhatsApp -->
-                                <a href="#" title="WhatsApp" class="text-wine/70 hover:text-wine transition-colors">
-                                    <i data-lucide="message-circle" class="w-7 h-7"></i>
+                                <a href="https://wa.me/5561999999999" target="_blank" title="WhatsApp"
+                                    class="text-wine/70 hover:text-wine transition-colors">
+                                    <i data-lucide="message-circle" class="w-8 h-8"></i>
                                 </a>
                             </div>
 
-                            <div class="font-serif text-[1.4rem] leading-relaxed text-earth font-light max-w-sm leading-[1.6]">
-                                Atendimento online para todo o Brasil. Presencial em São Paulo, SP (Próximo à Av.
-                                Paulista).
+                            <div
+                                class="font-serif text-[1.4rem] leading-relaxed text-earth font-light max-w-sm leading-[1.6]">
+                                Atendimento online para todo o Brasil. Presencial no Shopping Liberty Mall, Brasília -
+                                DF.
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Google Maps -->
+                <div
+                    class="mt-24 max-w-5xl mx-auto w-full h-[225px] overflow-hidden rounded-2xl shadow-md border-4 border-white/30">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.2312217621123!2d-47.88448162486985!3d-15.790176884852934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3af23b566679%3A0x6790b8f36c56dd17!2sShopping%20Liberty%20Mall!5e0!3m2!1spt-BR!2sbr!4v1711756000000!5m2!1spt-BR!2sbr"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="w-full h-full"></iframe>
                 </div>
             </div>
         </section>
@@ -432,7 +815,7 @@
             <div class="mb-20">
                 <p class="font-serif italic text-2xl md:text-[2rem] text-wine leading-[1.3]">
                     Quando nos encontramos com honestidade e presença, <br class="hidden md:block">
-                    algo único e transformador acontece. Você não precisa carregar tudo sozinha.
+                    algo único e transformador acontece. Você não está sozinho.
                 </p>
             </div>
 
@@ -442,21 +825,30 @@
             <div
                 class="pt-8 border-t border-earth/10 w-full flex flex-col md:flex-row justify-between items-center gap-6">
                 <p class="text-earth/40 text-[0.7rem] tracking-widest uppercase order-2 md:order-1">
-                    © 2025 | Elisa Campestrini | Psicóloga Humanista | CRP 06/XXXXXX
+                    © 2026 | BRASÍLIA | Elisa Campestrini | PSICOLOGIA CLÍNICA | CRP 01/254333
                 </p>
 
                 <div class="flex gap-8 order-1 md:order-2">
                     <!-- Doctoralia -->
-                    <a href="#" title="Doctoralia" class="text-wine/70 hover:text-wine transition-colors">
-                        <i data-lucide="stethoscope" class="w-7 h-7"></i>
+                    <a href="https://www.doctoralia.com.br/elisa-campestrini/psicologo/brasilia" target="_blank"
+                        title="Doctoralia" class="text-wine/70 hover:text-wine transition-colors">
+                        <i data-lucide="stethoscope" class="w-8 h-8"></i>
                     </a>
                     <!-- Instagram -->
-                    <a href="#" title="Instagram" class="text-wine/70 hover:text-wine transition-colors">
-                        <i data-lucide="instagram" class="w-7 h-7"></i>
+                    <a href="https://www.instagram.com/psielisacampestrini/" target="_blank" title="Instagram"
+                        class="text-wine/70 hover:text-wine transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="w-8 h-8">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                        </svg>
                     </a>
                     <!-- WhatsApp -->
-                    <a href="#" title="WhatsApp" class="text-wine/70 hover:text-wine transition-colors">
-                        <i data-lucide="message-circle" class="w-7 h-7"></i>
+                    <a href="https://wa.me/5561999999999" target="_blank" title="WhatsApp"
+                        class="text-wine/70 hover:text-wine transition-colors">
+                        <i data-lucide="message-circle" class="w-8 h-8"></i>
                     </a>
                 </div>
             </div>
@@ -513,6 +905,58 @@
                 }
             });
         });
+
+        // Carousel Navigation
+        const carousel = document.getElementById('testimonial-carousel');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        if (carousel && prevBtn && nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                const cardWidth = carousel.querySelector('.snap-center').offsetWidth + 24; // width + gap
+                carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+            });
+
+            prevBtn.addEventListener('click', () => {
+                const cardWidth = carousel.querySelector('.snap-center').offsetWidth + 24; // width + gap
+                carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+            });
+
+            // Hide/Show buttons based on scroll position
+            carousel.addEventListener('scroll', () => {
+                const scrollLeft = carousel.scrollLeft;
+                const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+
+                prevBtn.style.opacity = scrollLeft > 10 ? '1' : '0';
+                nextBtn.style.opacity = scrollLeft < maxScroll - 10 ? '1' : '0';
+
+                prevBtn.style.pointerEvents = scrollLeft > 10 ? 'auto' : 'none';
+                nextBtn.style.pointerEvents = scrollLeft < maxScroll - 10 ? 'auto' : 'none';
+            });
+
+            // Initial state
+            prevBtn.style.opacity = '0';
+            prevBtn.style.pointerEvents = 'none';
+        }
+
+        // Active Card Observer
+        if (carousel) {
+            const cardObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('focus-card');
+                    } else {
+                        entry.target.classList.remove('focus-card');
+                    }
+                });
+            }, {
+                root: carousel,
+                rootMargin: '0px -30% 0px -30%', // Creates a tighter focus band in the center
+                threshold: 0
+            });
+
+            document.querySelectorAll('.testimonial-card').forEach(card => cardObserver.observe(card));
+        }
     </script>
 </body>
 

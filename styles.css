@@ -64,3 +64,54 @@ a[class*="bg-wine"], button[class*="bg-wine"], a[class*="bg-[#EDC5B9]"] {
 a[class*="bg-wine"]:hover, button[class*="bg-wine"]:hover, a[class*="bg-[#EDC5B9]"]:hover {
     transform: scale(1.05) translateY(-2px);
 }
+
+/* Carousel Styles */
+#testimonial-carousel {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+#testimonial-carousel::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari and Opera */
+}
+
+.snap-x {
+    scroll-snap-type: x mandatory;
+}
+
+.snap-center {
+    scroll-snap-align: center;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Custom Scroll Behavior for Carousel Padding */
+#testimonial-carousel::after {
+    content: '';
+    flex: 0 0 1rem;
+}
+
+@media (min-width: 768px) {
+    #testimonial-carousel::after {
+        content: '';
+        flex: 0 0 5rem;
+    }
+}
+
+/* Testimonial Card active state */
+.testimonial-card {
+    transition: all 0.5s ease-in-out;
+    opacity: 0.5;
+}
+
+.testimonial-card.focus-card {
+    opacity: 1;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
